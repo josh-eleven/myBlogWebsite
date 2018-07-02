@@ -8,7 +8,7 @@ export default class IndexPage extends React.PureComponent {
   render() {
     return (
       <div className={styles.normal}>
-        <h1 className={styles.title}>Yay! Welcome to dva!</h1>
+        <h1 className={styles.title}>test for build scripts</h1>
         <div className={styles.welcome} />
         <ul className={styles.list}>
           <li>To get started, edit <code>src/index.js</code> and save to reload.</li>

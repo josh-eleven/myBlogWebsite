@@ -11,6 +11,6 @@ export default {
             publicPath: '/',
         },
     },
-    publicPath: '/public',
+    publicPath: '/public/',
     hash: true,
 };

@@ -1,5 +1,5 @@
 const shell = require('shelljs');
-const fs = require('node-fs-extra');
+const fs = require('fs-extra');
 const path = require('path');
 
 const frontPath = path.join(__dirname);
@@ -26,8 +26,11 @@ async function copyDistToServer() {
         const htmlPath = path.join(frontPath, './dist/index.html');
         const htmlServerPath = path.join(serverPath, './app/view/home/index.tpl');
 
+        // empty dir
+        await fs.emptyDir(publicDir);
+
         // copy resource to public
-        await fs.copy(staticDir, publicDir);
+        await fs.copy(staticDir, `${publicDir}/static`);
         await fs.copy(jsPath, `${publicDir}/${jsName}`);
         await fs.copy(cssPath, `${publicDir}/${cssName}`);
         await fs.copy(htmlPath, htmlServerPath);
