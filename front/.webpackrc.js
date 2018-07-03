@@ -6,11 +6,15 @@ export default {
     html: {
         template: './src/index.ejs',
     },
+    alias: {
+        components: path.resolve(__dirname, 'src/components/'),
+    },
     env: {
         development: {
             publicPath: '/',
         },
     },
+    theme: './src/theme.js',
     publicPath: '/public/',
     hash: true,
 };

@@ -9,8 +9,10 @@
   "dependencies": {
     "antd": "^3.6.4",
     "babel-plugin-import": "^1.8.0",
+    "classnames": "^2.2.6",
     "dva": "^2.3.1",
     "react": "^16.2.0",
+    "react-document-title": "^2.0.3",
     "react-dom": "^16.2.0"
   },
   "devDependencies": {
